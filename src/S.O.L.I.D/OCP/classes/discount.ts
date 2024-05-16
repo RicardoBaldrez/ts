@@ -1,25 +1,17 @@
 export abstract class Discount {
-  abstract calculate(value: number): number;
-}
+  protected discount = 0;
 
-export class NoDiscount extends Discount {
   calculate(price: number): number {
-    return price;
+    return +(price - price * this.discount).toFixed(2);
   }
 }
+
+export class NoDiscount extends Discount {}
 
 export class TenPercentDiscount extends Discount {
-  private readonly discount = 0.1;
-
-  calculate(price: number): number {
-    return price - price * this.discount;
-  }
+  protected readonly discount = 0.1;
 }
 
 export class FiftyPercentDiscount extends Discount {
-  private readonly discount = 0.5;
-
-  calculate(price: number): number {
-    return price - price * this.discount;
-  }
+  protected readonly discount = 0.5;
 }

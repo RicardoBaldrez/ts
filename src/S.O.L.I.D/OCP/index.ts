@@ -6,9 +6,9 @@ import { Messaging } from './services/messaging';
 import { Order } from './classes/order';
 import { ShoppingCart } from './classes/shopping-cart';
 import { Product } from './classes/product';
-import { TenPercentDiscount } from './classes/discount';
+import { FiftyPercentDiscount } from './classes/discount';
 
-const percentDiscount = new TenPercentDiscount();
+const percentDiscount = new FiftyPercentDiscount();
 const shoppingCart = new ShoppingCart(percentDiscount);
 const messaging = new Messaging();
 const persistency = new Persistency();
