@@ -10,12 +10,27 @@ import { Order } from './classes/order';
 import { ShoppingCart } from './classes/shopping-cart';
 import { Product } from './classes/product';
 import { FiftyPercentDiscount } from './classes/discount';
+import { EnterpriseCustomer } from './classes/customer';
 
 const percentDiscount = new FiftyPercentDiscount();
 const shoppingCart = new ShoppingCart(percentDiscount);
 const messaging = new Messaging();
 const persistency = new Persistency();
-const order = new Order(shoppingCart, messaging, persistency);
+// const individualcustomer = new IndividualCustomer(
+//   'Ricardo',
+//   'Baldrez',
+//   '386.495238-70',
+// );
+const enterpriseCustomer = new EnterpriseCustomer(
+  'Dasa Exp',
+  '61.486.650/0725-08',
+);
+const order = new Order(
+  shoppingCart,
+  messaging,
+  persistency,
+  enterpriseCustomer,
+);
 
 shoppingCart.addProduct(new Product('Kratos Funko', 50.9));
 shoppingCart.addProduct(new Product('Kratos Shirt', 70.9));
