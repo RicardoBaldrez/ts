@@ -1,4 +1,4 @@
-import { Discount } from './discount';
+import { Discount } from './Discount/discount';
 import { ProductItem } from './interfaces/product-item';
 import { ShoppingCartProtocol } from './interfaces/shopping-cart-protocol';
 

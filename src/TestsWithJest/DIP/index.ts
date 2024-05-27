@@ -12,7 +12,7 @@ import { Persistency } from './services/Persistency/persistency';
 import { Order } from './classes/order';
 import { ShoppingCart } from './classes/shopping-cart';
 import { Product } from './classes/Product/product';
-import { FiftyPercentDiscount } from './classes/discount';
+import { FiftyPercentDiscount } from './classes/Discount/discount';
 import { EnterpriseCustomer } from './classes/customer';
 import { MessagingProtocol } from './classes/interfaces/messaging-protocol';
 
