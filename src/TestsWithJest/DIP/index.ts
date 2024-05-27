@@ -11,7 +11,7 @@ import { Persistency } from './services/Persistency/persistency';
 // import { Messaging } from './services/messaging';
 import { Order } from './classes/order';
 import { ShoppingCart } from './classes/shopping-cart';
-import { Product } from './classes/product';
+import { Product } from './classes/Product/product';
 import { FiftyPercentDiscount } from './classes/discount';
 import { EnterpriseCustomer } from './classes/customer';
 import { MessagingProtocol } from './classes/interfaces/messaging-protocol';

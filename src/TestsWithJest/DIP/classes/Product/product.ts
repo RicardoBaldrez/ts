@@ -1,4 +1,4 @@
-import { ProductItem } from './interfaces/product-item';
+import { ProductItem } from '../interfaces/product-item';
 
 export class Product implements ProductItem {
   constructor(
