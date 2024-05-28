@@ -10,7 +10,7 @@
 import { Persistency } from './services/Persistency/persistency';
 // import { Messaging } from './services/messaging';
 import { Order } from './classes/order';
-import { ShoppingCart } from './classes/shopping-cart';
+import { ShoppingCart } from './classes/ShoppingCart/shopping-cart';
 import { Product } from './classes/Product/product';
 import { FiftyPercentDiscount } from './classes/Discount/discount';
 import { EnterpriseCustomer } from './classes/Customer/customer';

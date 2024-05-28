@@ -1,6 +1,6 @@
-import { Discount } from './Discount/discount';
-import { ProductItem } from './interfaces/product-item';
-import { ShoppingCartProtocol } from './interfaces/shopping-cart-protocol';
+import { Discount } from '../Discount/discount';
+import { ProductItem } from '../interfaces/product-item';
+import { ShoppingCartProtocol } from '../interfaces/shopping-cart-protocol';
 
 export class ShoppingCart implements ShoppingCartProtocol {
   private readonly _products: ProductItem[] = [];
