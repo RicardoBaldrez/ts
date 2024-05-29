@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
+    "test:coverage": "jest --coverage --silent --noStackTrace",
     "test:silent": "jest --watchAll --silent --noStackTrace"
   },
   "keywords": [],

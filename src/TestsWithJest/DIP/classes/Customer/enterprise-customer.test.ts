@@ -35,6 +35,6 @@ describe('EnterpriseCustomer', () => {
       '07.751.196/0001-03',
     );
 
-    expect(sut.getName()).toBe('Enterprise name is: GFT TECHNOLOGIES S.A.');
+    expect(sut.getIDN()).toBe('07.751.196/0001-03');
   });
 });
